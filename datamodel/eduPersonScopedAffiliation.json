@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "eduPerson Scoped Affiliation",
+  "description": "UKAMF vocabulary to assign profile to a person.",
+  "type": "string",
+  "enum": ["student", "staff", "employee", "member", "affiliate", "alum", "libraryWalkIn"]
+}
