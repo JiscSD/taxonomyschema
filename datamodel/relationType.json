@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Relation Type",
+  "description": "vocabulary used to relate digital objects and records with one another.",
+  "type": "string",
+  "enum": ["cites", "isCitedBy", "isSupplementTo", "isSupplementedBy", "continues", "isContinuedBy", "hasMetadata", "isMetadataFor", "isNewVersionOf", "isPreviousVersionOf", "isPartOf", "hasPart", "isReferencedBy", "references", "isDocumentedBy", "documents", "isCompiledBy", "compiles", "isVariantFormOf", "isOriginalFormOf", "isIdenticalTo", "isReviewedBy", "reviews", "isDerivedFrom", "isSourceOf", "isCommentOn", "hasComment", "isReplyTo", "hasReply", "basedOnData", "hasRelatedMaterial", "isBasedOn", "isBasisFor", "requires", "isRequiredBy", "hasParent", "isParentOf"]
+}
