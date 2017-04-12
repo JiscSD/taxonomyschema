@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Checksum Type",
+  "description": "Checksum type used in preservation process",
+  "type": "string",
+  "enum": ["md5", "sha256"]
+}
