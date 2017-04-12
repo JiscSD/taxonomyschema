@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Date Type",
+  "description": "The nature of the date assosciated with the digital object",
+  "type": "string",
+  "enum": ["accepted", "approved", "available", "copyrighted", "collected", "created", "issued", "modified", "posted", "published"]
+}
