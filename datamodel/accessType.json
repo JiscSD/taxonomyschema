@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Access Type",
-  "description": "",
+  "description": "Access type assigned to the data",
   "type": "string",
   "enum": ["open", "restricted", "controlled", "closed"]
 }
