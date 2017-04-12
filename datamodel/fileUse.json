@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "File Use",
+  "description": "Description of file used in preservation workflows",
+  "type": "string",
+  "enum": ["originalFile", "thumbnailImage", "extractedText", "preservationMasterFile", "intermediateFile", "serviceFile", "transcript"]
+}
