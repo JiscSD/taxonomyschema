@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Person Identifier Type",
+  "description": "The type of identifier that has been used to reference a Person",
+  "type": "string",
+  "enum": ["ORCID", "FOAF", "Twitter", "eduPersonTargetedID", "eduPersonPrincipleName"]
+}
