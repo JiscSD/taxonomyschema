@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Publication Version",
+  "description": "NISO RP-8-201x Journal Article Versions (JAV)",
+  "type": "string",
+  "enum": ["AO", "SMUR", "AM", "P", "VoR", "CVoR", "EVoR", "NA"]
+}
