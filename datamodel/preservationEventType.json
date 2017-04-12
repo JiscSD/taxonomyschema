@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Preservation Event Type",
+  "description": "Events that occur in preservation workflows, derived from Library of Congress vocabulary",
+  "type": "string",
+  "enum": ["capture", "compression", "creation", "deaccession", "decompression", "decryption", "deletion", "digitalSignatureValidation", "download", "fixityCheck", "ingestion", "messageDigestCalculation", "migration", "normalisation", "replication", "update", "validation", "virusCheck"]
+}
