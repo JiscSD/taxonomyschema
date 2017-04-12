@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Dataset Resource Type",
+  "description": "Type of data being described",
+  "type": "string",
+  "enum": ["dataset", "image", "movingImage", "model", "software", "audio", "other", "interactiveResource", "event", "service", "text", "workflow"]
+}
