@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "APC",
+  "description": "Article Processing Charge status",
+  "type": "string",
+  "enum": ["paid", "partiallyWaived", "fullyWaived", "notCharged", "notRequired", "unknown"]
+}
