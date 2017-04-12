@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Storage Status",
+  "description": "Status of file / object in storage",
+  "type": "string",
+  "enum": ["online", "nearline", "offline"]
+}
