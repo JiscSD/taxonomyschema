@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Object Identifier Type",
+  "description": "The type of identifier associated with a digital object.",
+  "type": "string",
+  "enum": ["ARK", "arXiv", "bibcode", "DOI", "EAN13", "EISSN", "Handle", "ISBN", "ISSN", "ISTC", "LISSN", "LSID", "PMID", "PUID", "PURL", "UPC", "URL", "URN"]
+}
