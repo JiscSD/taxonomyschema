@@ -2,6 +2,18 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "eduPerson Entitlement",
   "description": "Role of a person which defines a set of access permissions",
-  "type": "string",
-  "enum": ["administrator", "contactPerson", "dataAnalyser", "dataCollector", "dataCreator", "dataManager". "editor", "investigator", "producer", "projectLeader", "publicationAuthor", "publisher", "projectMember", "relatedPerson", "researcher", "researcherGroup", "rightsHolder", "sponsor", "supervisor", "other"]
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for the vocabulary",
+      "default": 6,
+      "type": "integer"
+    },
+    "vocabulary": {
+      "description": "Each term identifies a role to which belongs a set of access permissions to services and software",
+      "type": "string",
+      "enum": ["administrator", "contactPerson", "dataAnalyser", "dataCollector", "dataCreator", "dataManager", "editor", "investigator", "producer", "projectLeader", "publicationAuthor", "publisher", "projectMember", "relatedPerson", "researcher", "researcherGroup", "rightsHolder", "sponsor", "supervisor", "other"]
+    }
+  },
+  "required": ["id", "vocabulary"]
 }
