@@ -6,7 +6,7 @@
   "properties": {
     "id": {
       "description": "The unique identifier for the vocabulary",
-      "default": 1,
+      "default": 2,
       "type": "integer"
     },
     "vocabulary": {
