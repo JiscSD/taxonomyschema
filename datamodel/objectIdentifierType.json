@@ -2,6 +2,18 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Object Identifier Type",
   "description": "The type of identifier associated with a digital object.",
-  "type": "string",
-  "enum": ["ARK", "arXiv", "bibcode", "DOI", "EAN13", "EISSN", "Handle", "ISBN", "ISSN", "ISTC", "LISSN", "LSID", "PMID", "PUID", "PURL", "UPC", "URL", "URN"]
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for the vocabulary",
+      "default": 9,
+      "type": "integer"
+    },
+    "vocabulary": {
+      "description": "The identifier type that has been assigned to the digital object.",
+      "type": "string",
+      "enum": ["ARK", "arXiv", "bibcode", "DOI", "EAN13", "EISSN", "Handle", "ISBN", "ISSN", "ISTC", "LISSN", "LSID", "PMID", "PUID", "PURL", "UPC", "URL", "URN"]
+    }
+  },
+  "required": ["id", "vocabulary"]
 }
