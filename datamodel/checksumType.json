@@ -10,7 +10,7 @@
       "type": "integer"
     },
     "vocabulary": {
-      "description": "Checksum type used in preservation process",
+      "description": "Message digest algorithm used",
       "type": "string",
       "enum": ["md5", "sha256"]
     }
