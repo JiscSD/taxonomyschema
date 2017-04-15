@@ -1,0 +1,4 @@
+jsonschema
+gitpython
+pytest
+q
