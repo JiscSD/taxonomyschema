@@ -1,4 +1,4 @@
 jsonschema
-gitpython
 pytest
+pre-commit
 q

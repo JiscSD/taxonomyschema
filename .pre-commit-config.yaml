@@ -1,0 +1,7 @@
+-   repo: local
+    hooks:
+    -   id: check-x
+        name: Check X
+        entry: ./bin/check-x.sh
+        language: script
+        files: \.x$

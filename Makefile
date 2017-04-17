@@ -1,4 +1,7 @@
 install:
+	@pip install -r requirements.txt
+
+update-deps:
 	@pip install -r requirements-to-freeze.txt --upgrade
 	@pip freeze > requirements.txt
 
