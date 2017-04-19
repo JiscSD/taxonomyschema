@@ -1,7 +1,7 @@
 -   repo: local
     hooks:
-    -   id: check-x
-        name: Check X
-        entry: ./bin/check-x.sh
+    -   id: validate-examples
+        name: Validate Examples
+        entry: ./bin/validate-examples.py
         language: script
-        files: \.x$
+        files: datamodel/.+\.json$
