@@ -7,6 +7,7 @@ class Schema:
     """
     Loads a JSONSchema file and exposes validation method
     """
+
     def __init__(self, filepath):
         self.schema = self._load(filepath)
         self.filename = basename(filepath)

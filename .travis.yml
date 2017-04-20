@@ -7,6 +7,7 @@ python:
 
 install:
   - make install
-  - pre-commit run --all-files
 
-script: pytest
+script:
+  - make lint
+  - make test

@@ -5,3 +5,15 @@
         entry: ./bin/validate-examples.py
         language: script
         files: datamodel/.+\.json$
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: 46251c9523506b68419aefdf5ff6ff2fbc4506a4
+    hooks:
+    -   id: autopep8-wrapper
+    -   id: check-added-large-files
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: detect-private-key
+    -   id: end-of-file-fixer
+    -   id: flake8
+    -   id: forbid-new-submodules
+    -   id: trailing-whitespace

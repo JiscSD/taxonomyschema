@@ -5,7 +5,7 @@ import argparse
 import os
 import sys
 sys.path.append(os.getcwd())
-from taxonomyschema.schema import Schema
+from taxonomyschema.schema import Schema  # noqa: E402
 
 
 def check_examples(files, valid_dir, invalid_dir):
@@ -37,9 +37,12 @@ def check_examples(files, valid_dir, invalid_dir):
 def run(argv=None):
     schema_glob = os.path.join(os.getcwd(), 'datamodel', '*')
     parser = argparse.ArgumentParser()
-    parser.add_argument('filenames', nargs='*', default=glob(schema_glob), help='JSONSchema files')
-    parser.add_argument('valid', nargs='*', default='examples/valid', help='Valid files directory')
-    parser.add_argument('invalid', nargs='*', default='examples/invalid', help='Valid files directory')
+    parser.add_argument('filenames', nargs='*',
+                        default=glob(schema_glob), help='JSONSchema files')
+    parser.add_argument('valid', nargs='*',
+                        default='examples/valid', help='Valid directory')
+    parser.add_argument('invalid', nargs='*',
+                        default='examples/invalid', help='Invalid directory')
     args = parser.parse_args(argv)
     return check_examples(args.filenames, args.valid, args.invalid)
 
