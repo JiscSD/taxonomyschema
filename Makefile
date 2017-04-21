@@ -2,7 +2,7 @@ install:
 	@pip install -r requirements.txt
 	@pre-commit install
 
-update-deps:
+deps:
 	@pip install -r requirements-to-freeze.txt --upgrade
 	@pip freeze > requirements.txt
 
@@ -21,4 +21,4 @@ test-integration:
 debug:
 	@pytest --pdb
 
-.PHONY: test setup deps
+.PHONY: install deps lint test* debug
