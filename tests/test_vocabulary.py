@@ -1,15 +1,22 @@
-# import pytest
-# import json
-# # from taxonomyschema.vocabulary import *
+import pytest
+import json
+# from glob import glob
+# from taxonomyschema.vocabulary import *
+from taxonomyschema.vocabulary import Vocabulary, VocabularyEncoder
 # import taxonomyschema.vocabulary
 
 
-# # @pytest.mark.parametrize(('git_status', 'filepath'), [
-# #     ('A', 'test/fixtures/input/01.json'),
-# #     ('M', 'test/fixtures/input/02.json')
-# # ])
-# # def test_answer(git_status, filepath):
-# #     result = VocabularyFactory(money)
-# #     with open('test/fixtures/output/01.json') as f:
-# #         expected = json.loads(f)
-# #     assert expected == result
+def load_json(filepath):
+    with open(filepath) as f:
+        return json.dumps(json.load(f))
+
+
+testdata = [
+    ('tests/fixtures/input/APC.json', 'tests/fixtures/output/APC.json'),
+]
+
+
+@pytest.mark.parametrize("schema,expected", testdata)
+def test_vocabulary_serialisation(schema, expected):
+    result = Vocabulary(schema)
+    assert load_json(expected) == json.dumps(result, cls=VocabularyEncoder)

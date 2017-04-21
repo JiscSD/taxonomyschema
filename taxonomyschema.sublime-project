@@ -36,6 +36,6 @@
 	"settings":
 	{
 		"test_command": "pytest -xv tests",
-		"test_virtualenv": "./env"
+		"test_virtualenv": "~/.pyenv/versions/3.6.0/envs/taxonomyschema"
 	}
 }

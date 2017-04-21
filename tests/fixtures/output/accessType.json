@@ -1,5 +1,5 @@
 {
-  "id": 2,
-  "title": "Access Type",
-  "vocabulary": ["open", "restricted", "controlled", "closed"]
+  "vocabularyId": 2,
+  "vocabularyName": "Access Type",
+  "vocabularyValues": ["open", "restricted", "controlled", "closed"]
 }

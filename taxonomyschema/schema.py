@@ -5,7 +5,7 @@ from os.path import basename, join
 
 class Schema:
     """
-    Loads a JSONSchema file and exposes validation method
+    Loads a JSONSchema file and exposes validate method
     """
 
     def __init__(self, filepath):
