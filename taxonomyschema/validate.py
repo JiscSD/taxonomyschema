@@ -3,7 +3,9 @@ from taxonomyschema.schema import Schema
 
 
 def validate_examples(files, valid_dir, invalid_dir):
-
+    """
+    Validates example JSON files with JSON Schema definitions
+    """
     for f in files:
         schema = Schema(f)
 

@@ -1,11 +1,15 @@
 import json
-from os.path import basename, splitext
+from os.path import basename, splitext, join
+from glob import glob
 
 
 class VocabularyEncoder(json.JSONEncoder):
+    """
+    Encodes a Vocuabulary class to JSON
+    """
 
     def default(self, obj):
-        if isinstance(obj, Vocabulary):
+        if isinstance(obj, Vocabulary) or isinstance(obj, VocabularyManifest):
             return obj.to_json()
 
         return json.JSONEncoder.default(self, obj)
@@ -37,7 +41,15 @@ class Vocabulary():
         return self.__dict__
 
 
-# url = "http://localhost:8080"
-# data = {'sender': 'Alice', 'receiver': 'Bob', 'message': 'We did it!'}
-# headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
-# r = requests.post(url, data=json.dumps(data), headers=headers)
+class VocabularyManifest():
+    """
+    Loads all JSON schemas in a directory
+    and generates a manifest of Vocabulary instances
+    """
+
+    def __init__(self, dirpath):
+        schema_files = sorted(glob(join(dirpath, '*.json')))
+        self.manifest = [Vocabulary(f) for f in schema_files]
+
+    def to_json(self):
+        return self.manifest
