@@ -9,7 +9,7 @@ from taxonomyschema.validate import validate_examples  # noqa: E402
 
 def run(argv=None):
     parser = argparse.ArgumentParser()
-    schema_glob = os.path.join(os.getcwd(), 'datamodel', '*')
+    schema_glob = os.path.join(os.getcwd(), 'datamodel', '*.json')
     parser.add_argument('filenames', nargs='*',
                         default=glob(schema_glob), help='JSONSchema files')
     parser.add_argument('valid', nargs='*',
