@@ -1,4 +1,5 @@
 jsonschema
+requests
 pytest
 pytest-helpers-namespace
 pre-commit
