@@ -1,9 +1,13 @@
+deps:
+	@pip install -r requirements-to-freeze.txt --upgrade
+	@pip freeze > requirements.txt
+
 install:
 	@pip install -r requirements.txt
 	@pre-commit install
 
-deps:
-	@pip install -r requirements-to-freeze.txt --upgrade
+clean:
+	@pip uninstall -r requirements.txt
 	@pip freeze > requirements.txt
 
 lint:
@@ -15,10 +19,7 @@ lint:
 test:
 	@pytest
 
-test-integration:
-	@pytest -c tox_integration.ini
-
 debug:
 	@pytest --pdb
 
-.PHONY: install deps lint test* debug
+.PHONY: install deps lint test* debug clean
