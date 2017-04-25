@@ -4,3 +4,5 @@ responses
 pytest
 pytest-helpers-namespace
 pre-commit
+pep8
+autopep8
