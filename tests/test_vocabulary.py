@@ -3,7 +3,7 @@ import json
 from taxonomyschema.vocabulary import Vocabulary, VocabularyEncoder, VocabularyManifest  # noqa: E501
 
 
-@pytest.mark.parametrize("schema,expected", pytest.helpers.testdata())
+@pytest.mark.parametrize('schema,expected', pytest.helpers.testdata())
 def test_vocabulary_serialisation(schema, expected):
     vocab = Vocabulary(schema)
     result = json.dumps(vocab, cls=VocabularyEncoder)

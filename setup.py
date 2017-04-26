@@ -6,8 +6,8 @@ setup(
     description='Updates the taxonomy service with schemas in repository.',
     url='https://github.com/JiscRDSS/taxonomyschema',
     install_requires=[
-        "jsonschema==2.6.0",
-        "requests==2.13.0"
+        'jsonschema==2.6.0',
+        'requests==2.13.0'
     ],
     tests_require=[
         'pytest',

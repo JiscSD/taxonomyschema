@@ -1,8 +1,8 @@
+autopep8
 jsonschema
-requests
-responses
+pep8
+pre-commit
 pytest
 pytest-helpers-namespace
-pre-commit
-pep8
-autopep8
+requests
+responses

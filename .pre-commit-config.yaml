@@ -10,10 +10,15 @@
     hooks:
     -   id: autopep8-wrapper
     -   id: check-added-large-files
+    -   id: check-case-conflict
     -   id: check-json
     -   id: check-merge-conflict
+    -   id: check-yaml
+    -   id: debug-statements
     -   id: detect-private-key
+    -   id: double-quote-string-fixer
     -   id: end-of-file-fixer
     -   id: flake8
     -   id: forbid-new-submodules
+    -   id: requirements-txt-fixer
     -   id: trailing-whitespace

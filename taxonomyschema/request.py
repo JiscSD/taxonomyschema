@@ -1,6 +1,6 @@
 import json
-import functools
 import requests
+from functools import wraps
 from time import sleep
 from requests.exceptions import ConnectionError, ConnectTimeout
 
@@ -9,7 +9,7 @@ def handle_requests_failures(func):
     '''
     This decorator handles request.exceptions
     '''
-    @functools.wraps(func)
+    @wraps(func)
     def wrapper(self, *args, **kw):
         '''
         Handle RequestException
