@@ -1,10 +1,22 @@
+[![Build Status](https://travis-ci.org/JiscRDSS/taxonomyschema.svg?branch=develop)](https://travis-ci.org/JiscRDSS/taxonomyschema)
+
 # taxonomyschema
-
-Script to update taxonomy service API with schemas contained in this repository.
-
+Updates the taxonomy service API with schemas contained in this repository.
 
 
-## Usage
+### Branching Convention
+Branches map to environments:
+- Master branch will deploy to production.
+- Develop branch will deploy to staging.
+
+
+### CLI Installation
+```
+make install
+```
+
+
+### CLI Usage
 ```
 usage: taxonomyschema [-h] schemas url
 
@@ -18,27 +30,30 @@ optional arguments:
   -h, --help  show this help message and exit
  ```
 
-## Installation
-```
-make install
-```
 
-## Deployment: TODO
-Master branch will autodeploy to production.
-Develop branch will autodeploy to staging.
 
-## Development
+
+
+-----------------------------------------------------------
+
+## Developer Setup
+
 Create a virtualenv then install requirements:
 ```
 make deps
 ```
 
-## Lint
+### Test
 ```
 make lint
 ```
 
-## Validate json schemas bin script
+### Lint
+```
+make lint
+```
+
+### Validate example JSON schemas
 ```
 ./bin/validate-examples.py
 ```
