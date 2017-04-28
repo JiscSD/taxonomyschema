@@ -1,5 +1,6 @@
 PYTHON = python3.6
 INSTALL_OPTS = `$(PYTHON) -c "import sys; print('' if hasattr(sys, 'real_prefix') else '--user')"`
+COVERAGE_MIN = 40
 
 install:
 	$(PYTHON) -c "import setuptools"
@@ -21,7 +22,7 @@ deps:
 	@pre-commit install
 
 clean:
-	@pip uninstall -r requirements.txt
+	@pip uninstall -yr requirements.txt
 	@pip freeze > requirements.txt
 
 lint:
@@ -38,6 +39,9 @@ autopep8-stats:
 
 test:
 	@pytest
+
+coverage:
+	@pytest --cov-fail-under $(COVERAGE_MIN) --cov=$(shell basename $(PWD)) tests/
 
 debug:
 	@pytest --pdb
