@@ -1,19 +1,58 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Organisation Type",
-  "description": "Organisation type derived from the Jisc vocabulary in use with the Enterprise Data Warehouse.",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 11,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "The type of institution based on a Jisc Organisation taxonomy.",
-      "type": "string",
-      "enum": ["charity", "commercial", "funder", "furtherEducation", "government", "health", "heritage", "higherEducation", "other", "professionalBody", "research", "school", "skills"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 11,
+    "vocabularyName": "organisationType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "charity"
+        },
+        {
+            "valueId": 2,
+            "valueName": "commercial"
+        },
+        {
+            "valueId": 3,
+            "valueName": "funder"
+        },
+        {
+            "valueId": 4,
+            "valueName": "furtherEducation"
+        },
+        {
+            "valueId": 5,
+            "valueName": "government"
+        },
+        {
+            "valueId": 6,
+            "valueName": "health"
+        },
+        {
+            "valueId": 7,
+            "valueName": "heritage"
+        },
+        {
+            "valueId": 8,
+            "valueName": "higherEducation"
+        },
+        {
+            "valueId": 9,
+            "valueName": "other"
+        },
+        {
+            "valueId": 10,
+            "valueName": "professionalBody"
+        },
+        {
+            "valueId": 11,
+            "valueName": "research"
+        },
+        {
+            "valueId": 12,
+            "valueName": "school"
+        },
+        {
+            "valueId": 13,
+            "valueName": "skills"
+        }
+    ]
 }

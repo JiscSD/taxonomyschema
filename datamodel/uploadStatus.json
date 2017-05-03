@@ -1,19 +1,18 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Upload status",
-  "description": "Status of data being uploaded",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 18,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Event description of the file status in relation to being stored.",
-      "type": "string",
-      "enum": ["uploadStarted", "uploadComplete", "uploadAborted"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 18,
+    "vocabularyName": "uploadStatus",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "uploadStarted"
+        },
+        {
+            "valueId": 2,
+            "valueName": "uploadComplete"
+        },
+        {
+            "valueId": 3,
+            "valueName": "uploadAborted"
+        }
+    ]
 }

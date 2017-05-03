@@ -1,19 +1,78 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Preservation Event Type",
-  "description": "Events that occur in preservation workflows, derived from Library of Congress vocabulary",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 13,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Actions performed on digital objects within a preservation repository.",
-      "type": "string",
-      "enum": ["capture", "compression", "creation", "deaccession", "decompression", "decryption", "deletion", "digitalSignatureValidation", "download", "fixityCheck", "ingestion", "messageDigestCalculation", "migration", "normalisation", "replication", "update", "validation", "virusCheck"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 13,
+    "vocabularyName": "preservationEventType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "capture"
+        },
+        {
+            "valueId": 2,
+            "valueName": "compression"
+        },
+        {
+            "valueId": 3,
+            "valueName": "creation"
+        },
+        {
+            "valueId": 4,
+            "valueName": "deaccession"
+        },
+        {
+            "valueId": 5,
+            "valueName": "decompression"
+        },
+        {
+            "valueId": 6,
+            "valueName": "decryption"
+        },
+        {
+            "valueId": 7,
+            "valueName": "deletion"
+        },
+        {
+            "valueId": 8,
+            "valueName": "digitalSignatureValidation"
+        },
+        {
+            "valueId": 9,
+            "valueName": "download"
+        },
+        {
+            "valueId": 10,
+            "valueName": "fixityCheck"
+        },
+        {
+            "valueId": 11,
+            "valueName": "ingestion"
+        },
+        {
+            "valueId": 12,
+            "valueName": "messageDigestCalculation"
+        },
+        {
+            "valueId": 13,
+            "valueName": "migration"
+        },
+        {
+            "valueId": 14,
+            "valueName": "normalisation"
+        },
+        {
+            "valueId": 15,
+            "valueName": "replication"
+        },
+        {
+            "valueId": 16,
+            "valueName": "update"
+        },
+        {
+            "valueId": 17,
+            "valueName": "validation"
+        },
+        {
+            "valueId": 18,
+            "valueName": "virusCheck"
+        }
+    ]
 }

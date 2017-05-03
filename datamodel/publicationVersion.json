@@ -1,19 +1,38 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Publication Version",
-  "description": "NISO RP-8-201x Journal Article Versions (JAV)",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 15,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "The journal article version (JAV) as set out by the NISO RP-8-201x international standard. ",
-      "type": "string",
-      "enum": ["AO", "SMUR", "AM", "P", "VoR", "CVoR", "EVoR", "NA"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 15,
+    "vocabularyName": "publicationVersion",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "AO"
+        },
+        {
+            "valueId": 2,
+            "valueName": "SMUR"
+        },
+        {
+            "valueId": 3,
+            "valueName": "AM"
+        },
+        {
+            "valueId": 4,
+            "valueName": "P"
+        },
+        {
+            "valueId": 5,
+            "valueName": "VoR"
+        },
+        {
+            "valueId": 6,
+            "valueName": "CVoR"
+        },
+        {
+            "valueId": 7,
+            "valueName": "EVoR"
+        },
+        {
+            "valueId": 8,
+            "valueName": "NA"
+        }
+    ]
 }

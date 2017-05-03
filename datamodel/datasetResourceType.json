@@ -1,19 +1,54 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Dataset Resource Type",
-  "description": "Type of data being produced",
-   "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 4,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Single word classication of the data that has been produced.",
-      "type": "string",
-      "enum": ["dataset", "image", "movingImage", "model", "software", "audio", "other", "interactiveResource", "event", "service", "text", "workflow"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 4,
+    "vocabularyName": "datasetResourceType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "dataset"
+        },
+        {
+            "valueId": 2,
+            "valueName": "image"
+        },
+        {
+            "valueId": 3,
+            "valueName": "movingImage"
+        },
+        {
+            "valueId": 4,
+            "valueName": "model"
+        },
+        {
+            "valueId": 5,
+            "valueName": "software"
+        },
+        {
+            "valueId": 6,
+            "valueName": "audio"
+        },
+        {
+            "valueId": 7,
+            "valueName": "other"
+        },
+        {
+            "valueId": 8,
+            "valueName": "interactiveResource"
+        },
+        {
+            "valueId": 9,
+            "valueName": "event"
+        },
+        {
+            "valueId": 10,
+            "valueName": "service"
+        },
+        {
+            "valueId": 11,
+            "valueName": "text"
+        },
+        {
+            "valueId": 12,
+            "valueName": "workflow"
+        }
+    ]
 }

@@ -1,19 +1,22 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Access Type",
-  "description": "Access type assigned to the data",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 2,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "The access type",
-      "type": "string",
-      "enum": ["open", "restricted", "controlled", "closed"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 2,
+    "vocabularyName": "accessType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "open"
+        },
+        {
+            "valueId": 2,
+            "valueName": "restricted"
+        },
+        {
+            "valueId": 3,
+            "valueName": "controlled"
+        },
+        {
+            "valueId": 4,
+            "valueName": "closed"
+        }
+    ]
 }

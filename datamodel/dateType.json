@@ -1,19 +1,46 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Date Type",
-  "description": "The nature of the date assosciated with the digital object",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 5,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Distinct dates for status events that can be assigned to publications and data.",
-      "type": "string",
-      "enum": ["accepted", "approved", "available", "copyrighted", "collected", "created", "issued", "modified", "posted", "published"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 5,
+    "vocabularyName": "dateType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "accepted"
+        },
+        {
+            "valueId": 2,
+            "valueName": "approved"
+        },
+        {
+            "valueId": 3,
+            "valueName": "available"
+        },
+        {
+            "valueId": 4,
+            "valueName": "copyrighted"
+        },
+        {
+            "valueId": 5,
+            "valueName": "collected"
+        },
+        {
+            "valueId": 6,
+            "valueName": "created"
+        },
+        {
+            "valueId": 7,
+            "valueName": "issued"
+        },
+        {
+            "valueId": 8,
+            "valueName": "modified"
+        },
+        {
+            "valueId": 9,
+            "valueName": "posted"
+        },
+        {
+            "valueId": 10,
+            "valueName": "published"
+        }
+    ]
 }

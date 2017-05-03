@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Organisation Role",
+  "description": "Jisc vocabulary for Organisation role in use with the Enterprise Data Warehouse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for the vocabulary",
+      "default": 10,
+      "type": "integer"
+    },
+    "vocabulary": {
+      "description": "The role of the institution as defined in the Jisc organisation taxonomy.",
+      "type": "string",
+      "enum": ["funder", "hostingInstitution", "rightsHolder", "sponsor", "publisher", "registrationAgency", "registrationAuthority", "distributor", "advocacy", "billing", "display"]
+    }
+  },
+  "required": ["id", "vocabulary"]
+}

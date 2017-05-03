@@ -1,19 +1,34 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "eduPerson Scoped Affiliation",
-  "description": "UKAMF vocabulary to assign profile to a person.",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 7,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Vocabulary derived from UKAMF to assign an access profile to a person linked to an education establishment",
-      "type": "string",
-      "enum": ["student", "staff", "employee", "member", "affiliate", "alum", "libraryWalkIn"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 7,
+    "vocabularyName": "eduPersonScopedAffiliation",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "student"
+        },
+        {
+            "valueId": 2,
+            "valueName": "staff"
+        },
+        {
+            "valueId": 3,
+            "valueName": "employee"
+        },
+        {
+            "valueId": 4,
+            "valueName": "member"
+        },
+        {
+            "valueId": 5,
+            "valueName": "affiliate"
+        },
+        {
+            "valueId": 6,
+            "valueName": "alum"
+        },
+        {
+            "valueId": 7,
+            "valueName": "libraryWalkIn"
+        }
+    ]
 }

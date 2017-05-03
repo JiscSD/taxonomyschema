@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Storage Status",
+  "description": "Status of file / object in storage",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for the vocabulary",
+      "default": 17,
+      "type": "integer"
+    },
+    "vocabulary": {
+      "description": "The status of a file within the storage.",
+      "type": "string",
+      "enum": ["online", "nearline", "offline"]
+    }
+  },
+  "required": ["id", "vocabulary"]
+}

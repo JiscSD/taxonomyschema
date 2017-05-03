@@ -1,19 +1,102 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Publication Resource Type",
-  "description": "IRUS-UK vocabulary for publication resources.",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 14,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Publication types as set out byt the IRUS-UK vocabulary.",
-      "type": "string",
-      "enum": ["artOrDesignItem", "article", "audio", "book", "bookSection", "conferenceOrWorkshopItem", "examPaper", "image", "journal", "learningObject", "movingImage", "musicOrMuscalComposition", "other", "patent", "performance", "preprint", "report", "review", "showExhibition", "text", "thesisOrDissertation", "unknown", "website", "workingPaper" ]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 14,
+    "vocabularyName": "publicationResourceType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "artOrDesignItem"
+        },
+        {
+            "valueId": 2,
+            "valueName": "article"
+        },
+        {
+            "valueId": 3,
+            "valueName": "audio"
+        },
+        {
+            "valueId": 4,
+            "valueName": "book"
+        },
+        {
+            "valueId": 5,
+            "valueName": "bookSection"
+        },
+        {
+            "valueId": 6,
+            "valueName": "conferenceOrWorkshopItem"
+        },
+        {
+            "valueId": 7,
+            "valueName": "examPaper"
+        },
+        {
+            "valueId": 8,
+            "valueName": "image"
+        },
+        {
+            "valueId": 9,
+            "valueName": "journal"
+        },
+        {
+            "valueId": 10,
+            "valueName": "learningObject"
+        },
+        {
+            "valueId": 11,
+            "valueName": "movingImage"
+        },
+        {
+            "valueId": 12,
+            "valueName": "musicOrMuscalComposition"
+        },
+        {
+            "valueId": 13,
+            "valueName": "other"
+        },
+        {
+            "valueId": 14,
+            "valueName": "patent"
+        },
+        {
+            "valueId": 15,
+            "valueName": "performance"
+        },
+        {
+            "valueId": 16,
+            "valueName": "preprint"
+        },
+        {
+            "valueId": 17,
+            "valueName": "report"
+        },
+        {
+            "valueId": 18,
+            "valueName": "review"
+        },
+        {
+            "valueId": 19,
+            "valueName": "showExhibition"
+        },
+        {
+            "valueId": 20,
+            "valueName": "text"
+        },
+        {
+            "valueId": 21,
+            "valueName": "thesisOrDissertation"
+        },
+        {
+            "valueId": 22,
+            "valueName": "unknown"
+        },
+        {
+            "valueId": 23,
+            "valueName": "website"
+        },
+        {
+            "valueId": 24,
+            "valueName": "workingPaper"
+        }
+    ]
 }

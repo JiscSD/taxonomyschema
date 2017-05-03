@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Organisation Type",
+  "description": "Organisation type derived from the Jisc vocabulary in use with the Enterprise Data Warehouse.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for the vocabulary",
+      "default": 11,
+      "type": "integer"
+    },
+    "vocabulary": {
+      "description": "The type of institution based on a Jisc Organisation taxonomy.",
+      "type": "string",
+      "enum": ["charity", "commercial", "funder", "furtherEducation", "government", "health", "heritage", "higherEducation", "other", "professionalBody", "research", "school", "skills"]
+    }
+  },
+  "required": ["id", "vocabulary"]
+}

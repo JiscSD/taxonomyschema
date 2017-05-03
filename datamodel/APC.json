@@ -1,19 +1,30 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "APC",
-  "description": "Article Processing Charge status",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 1,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "The APC",
-      "type": "string",
-      "enum": ["paid", "partiallyWaived", "fullyWaived", "notCharged", "notRequired", "unknown"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 1,
+    "vocabularyName": "APC",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "paid"
+        },
+        {
+            "valueId": 2,
+            "valueName": "partiallyWaived"
+        },
+        {
+            "valueId": 3,
+            "valueName": "fullyWaived"
+        },
+        {
+            "valueId": 4,
+            "valueName": "notCharged"
+        },
+        {
+            "valueId": 5,
+            "valueName": "notRequired"
+        },
+        {
+            "valueId": 6,
+            "valueName": "unknown"
+        }
+    ]
 }

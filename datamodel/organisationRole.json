@@ -1,19 +1,50 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Organisation Role",
-  "description": "Jisc vocabulary for Organisation role in use with the Enterprise Data Warehouse",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 10,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "The role of the institution as defined in the Jisc organisation taxonomy.",
-      "type": "string",
-      "enum": ["funder", "hostingInstitution", "rightsHolder", "sponsor", "publisher", "registrationAgency", "registrationAuthority", "distributor", "advocacy", "billing", "display"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 10,
+    "vocabularyName": "organisationRole",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "funder"
+        },
+        {
+            "valueId": 2,
+            "valueName": "hostingInstitution"
+        },
+        {
+            "valueId": 3,
+            "valueName": "rightsHolder"
+        },
+        {
+            "valueId": 4,
+            "valueName": "sponsor"
+        },
+        {
+            "valueId": 5,
+            "valueName": "publisher"
+        },
+        {
+            "valueId": 6,
+            "valueName": "registrationAgency"
+        },
+        {
+            "valueId": 7,
+            "valueName": "registrationAuthority"
+        },
+        {
+            "valueId": 8,
+            "valueName": "distributor"
+        },
+        {
+            "valueId": 9,
+            "valueName": "advocacy"
+        },
+        {
+            "valueId": 10,
+            "valueName": "billing"
+        },
+        {
+            "valueId": 11,
+            "valueName": "display"
+        }
+    ]
 }

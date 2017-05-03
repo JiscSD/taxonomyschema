@@ -1,19 +1,14 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Checksum Type",
-  "description": "Checksum type used in preservation process",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 3,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Message digest algorithm used",
-      "type": "string",
-      "enum": ["md5", "sha256"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 3,
+    "vocabularyName": "checksumType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "md5"
+        },
+        {
+            "valueId": 2,
+            "valueName": "sha256"
+        }
+    ]
 }

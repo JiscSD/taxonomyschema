@@ -1,19 +1,26 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "Person Identifier Type",
-  "description": "The type of identifier that has been used to reference a Person",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 12,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Incomplete list of identifier types that can be assigned to a Person.",
-      "type": "string",
-      "enum": ["ORCID", "FOAF", "Twitter", "eduPersonTargetedID", "eduPersonPrincipleName"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 12,
+    "vocabularyName": "personIdentifierType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "ORCID"
+        },
+        {
+            "valueId": 2,
+            "valueName": "FOAF"
+        },
+        {
+            "valueId": 3,
+            "valueName": "Twitter"
+        },
+        {
+            "valueId": 4,
+            "valueName": "eduPersonTargetedID"
+        },
+        {
+            "valueId": 5,
+            "valueName": "eduPersonPrincipleName"
+        }
+    ]
 }

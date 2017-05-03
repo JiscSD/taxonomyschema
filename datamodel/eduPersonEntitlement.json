@@ -1,19 +1,86 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "eduPerson Entitlement",
-  "description": "Role of a person which defines a set of access permissions",
-  "type": "object",
-  "properties": {
-    "id": {
-      "description": "The unique identifier for the vocabulary",
-      "default": 6,
-      "type": "integer"
-    },
-    "vocabulary": {
-      "description": "Each term identifies a role to which belongs a set of access permissions to services and software",
-      "type": "string",
-      "enum": ["administrator", "contactPerson", "dataAnalyser", "dataCollector", "dataCreator", "dataManager", "editor", "investigator", "producer", "projectLeader", "publicationAuthor", "publisher", "projectMember", "relatedPerson", "researcher", "researcherGroup", "rightsHolder", "sponsor", "supervisor", "other"]
-    }
-  },
-  "required": ["id", "vocabulary"]
+    "vocabularyId": 6,
+    "vocabularyName": "eduPersonEntitlement",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "administrator"
+        },
+        {
+            "valueId": 2,
+            "valueName": "contactPerson"
+        },
+        {
+            "valueId": 3,
+            "valueName": "dataAnalyser"
+        },
+        {
+            "valueId": 4,
+            "valueName": "dataCollector"
+        },
+        {
+            "valueId": 5,
+            "valueName": "dataCreator"
+        },
+        {
+            "valueId": 6,
+            "valueName": "dataManager"
+        },
+        {
+            "valueId": 7,
+            "valueName": "editor"
+        },
+        {
+            "valueId": 8,
+            "valueName": "investigator"
+        },
+        {
+            "valueId": 9,
+            "valueName": "producer"
+        },
+        {
+            "valueId": 10,
+            "valueName": "projectLeader"
+        },
+        {
+            "valueId": 11,
+            "valueName": "publicationAuthor"
+        },
+        {
+            "valueId": 12,
+            "valueName": "publisher"
+        },
+        {
+            "valueId": 13,
+            "valueName": "projectMember"
+        },
+        {
+            "valueId": 14,
+            "valueName": "relatedPerson"
+        },
+        {
+            "valueId": 15,
+            "valueName": "researcher"
+        },
+        {
+            "valueId": 16,
+            "valueName": "researcherGroup"
+        },
+        {
+            "valueId": 17,
+            "valueName": "rightsHolder"
+        },
+        {
+            "valueId": 18,
+            "valueName": "sponsor"
+        },
+        {
+            "valueId": 19,
+            "valueName": "supervisor"
+        },
+        {
+            "valueId": 20,
+            "valueName": "other"
+        }
+    ]
 }
