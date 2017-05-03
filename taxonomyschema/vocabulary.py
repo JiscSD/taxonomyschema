@@ -1,5 +1,5 @@
 import json
-from os.path import basename, splitext, join
+from os.path import join
 from glob import glob
 
 
@@ -17,21 +17,15 @@ class VocabularyEncoder(json.JSONEncoder):
 
 class Vocabulary():
     """
-    Loads a JSONSchema vocabulary definition
+    Loads a Vocabulary model definition
     that is serialisable with json.dumps()
     """
 
     def __init__(self, filepath):
-        schema = self._load(filepath)
-        self.vocabularyId = schema['properties']['id']['default']
-        self.vocabularyName = splitext(basename(filepath))[0]
-        self.vocabularyValues = self._map_values(
-            schema['properties']['vocabulary']['enum'])
-
-    @staticmethod
-    def _map_values(values):
-        return [{'valueId': i + 1, 'valueName': v}
-                for i, v in enumerate(values)]
+        model = self._load(filepath)
+        self.vocabularyId = model['vocabularyId']
+        self.vocabularyName = model['vocabularyName']
+        self.vocabularyValues = model['vocabularyValues']
 
     def _load(self, filepath):
         with open(filepath) as f:

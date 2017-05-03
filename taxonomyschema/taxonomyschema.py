@@ -25,6 +25,7 @@ def run(schema_dir, url):
 
 
 def writemodels(in_dir, out_dir):
+
     if not path.exists(out_dir):
         makedirs(out_dir)
 
