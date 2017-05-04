@@ -41,9 +41,9 @@ class VocabularyManifest():
     and generates a manifest of Vocabulary instances
     """
 
-    def __init__(self, dirpath):
-        schema_files = sorted(glob(join(dirpath, '*.json')))
-        self.manifest = [Vocabulary(f) for f in schema_files]
+    def __init__(self, models_dir):
+        models = sorted(glob(join(models_dir, '*.json')))
+        self.manifest = [Vocabulary(f) for f in models]
 
     def to_json(self):
         return self.manifest

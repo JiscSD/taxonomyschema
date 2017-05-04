@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.org/JiscRDSS/taxonomyschema.svg?branch=develop)](https://travis-ci.org/JiscRDSS/taxonomyschema)
 
 # taxonomyschema
-Updates the taxonomy service API with schemas contained in this repository.
+Updates the taxonomy service API with datamodels contained in this repository.
 
 
-### Branching Convention
+### Branch Convention
 Branches map to environments:
 - Master branch will deploy to production.
 - Develop branch will deploy to staging.
@@ -18,13 +18,13 @@ make install
 
 ### CLI Usage
 ```
-usage: taxonomyschema [-h] schemas url
+usage: taxonomyschema [-h] models url
 
-Updates Taxonomy Service via HTTP service
+Updates Taxonomy Service datamodels via API call
 
 positional arguments:
-  schemas     path to schemas dir
-  url         url of API to POST schemas to
+  models      path to models directory
+  url         url of API to POST models to
 
 optional arguments:
   -h, --help  show this help message and exit
@@ -53,7 +53,7 @@ make lint
 make lint
 ```
 
-### Validate example JSON schemas
+### Validate the datamodels using JSONSchema
 ```
-./bin/validate-examples.py
+./bin/validate-datamodels.py
 ```

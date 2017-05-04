@@ -27,13 +27,13 @@ def validate_examples(schema, files):
 
 def main(argv=None):
     parser = argparse.ArgumentParser()
-    schema_glob = os.path.join(os.getcwd(), 'datamodel', '*.json')
+    schema_glob = os.path.join(os.getcwd(), 'datamodels', '*.json')
     parser.add_argument('filenames', nargs='*',
                         default=glob(schema_glob),
-                        help='JSONSchema files')
+                        help='datamodels to validate')
     parser.add_argument('-s', '--schema', type=str,
                         default='validation/model.json',
-                        help='JSONSchema file path')
+                        help='path to JSONSchema to validate with')
     args = parser.parse_args(argv)
     return validate_examples(schema=args.schema, files=args.filenames)
 

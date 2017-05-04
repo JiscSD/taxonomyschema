@@ -1,5 +1,39 @@
 [{
 	"vocabularyId": 1,
 	"vocabularyName": "APC",
-	"vocabularyValues": ["paid", "partiallyWaived", "fullyWaived", "notCharged", "notRequired", "unknown"]
+	"vocabularyValues": [{
+		"valueId": 1,
+		"valueName": "paid"
+	}, {
+		"valueId": 2,
+		"valueName": "partiallyWaived"
+	}, {
+		"valueId": 3,
+		"valueName": "fullyWaived"
+	}, {
+		"valueId": 4,
+		"valueName": "notCharged"
+	}, {
+		"valueId": 5,
+		"valueName": "notRequired"
+	}, {
+		"valueId": 6,
+		"valueName": "unknown"
+	}]
+}, {
+	"vocabularyId": 2,
+	"vocabularyName": "accessType",
+	"vocabularyValues": [{
+		"valueId": 1,
+		"valueName": "open"
+	}, {
+		"valueId": 2,
+		"valueName": "restricted"
+	}, {
+		"valueId": 3,
+		"valueName": "controlled"
+	}, {
+		"valueId": 4,
+		"valueName": "closed"
+	}]
 }]

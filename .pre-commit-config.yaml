@@ -1,10 +1,10 @@
 -   repo: local
     hooks:
-    -   id: validate-examples
+    -   id: validate-datamodels
         name: Validate Examples
-        entry: ./bin/validate-examples.py
+        entry: ./bin/validate-datamodels.py
         language: script
-        files: datamodel/.+\.json$
+        files: datamodels/.+\.json$
 -   repo: git://github.com/pre-commit/pre-commit-hooks
     sha: 46251c9523506b68419aefdf5ff6ff2fbc4506a4
     hooks:
