@@ -3,9 +3,9 @@ from glob import glob
 import argparse
 import os
 import sys
-from taxonomyschema.schema import Schema
 from jsonschema import exceptions
 sys.path.append(os.getcwd())
+from taxonomyschema.schema import Schema  # noqa: E402
 
 
 def validate_examples(schema, files):
