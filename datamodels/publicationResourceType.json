@@ -1,0 +1,102 @@
+{
+    "vocabularyId": 14,
+    "vocabularyName": "publicationResourceType",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "artOrDesignItem"
+        },
+        {
+            "valueId": 2,
+            "valueName": "article"
+        },
+        {
+            "valueId": 3,
+            "valueName": "audio"
+        },
+        {
+            "valueId": 4,
+            "valueName": "book"
+        },
+        {
+            "valueId": 5,
+            "valueName": "bookSection"
+        },
+        {
+            "valueId": 6,
+            "valueName": "conferenceOrWorkshopItem"
+        },
+        {
+            "valueId": 7,
+            "valueName": "examPaper"
+        },
+        {
+            "valueId": 8,
+            "valueName": "image"
+        },
+        {
+            "valueId": 9,
+            "valueName": "journal"
+        },
+        {
+            "valueId": 10,
+            "valueName": "learningObject"
+        },
+        {
+            "valueId": 11,
+            "valueName": "movingImage"
+        },
+        {
+            "valueId": 12,
+            "valueName": "musicOrMuscalComposition"
+        },
+        {
+            "valueId": 13,
+            "valueName": "other"
+        },
+        {
+            "valueId": 14,
+            "valueName": "patent"
+        },
+        {
+            "valueId": 15,
+            "valueName": "performance"
+        },
+        {
+            "valueId": 16,
+            "valueName": "preprint"
+        },
+        {
+            "valueId": 17,
+            "valueName": "report"
+        },
+        {
+            "valueId": 18,
+            "valueName": "review"
+        },
+        {
+            "valueId": 19,
+            "valueName": "showExhibition"
+        },
+        {
+            "valueId": 20,
+            "valueName": "text"
+        },
+        {
+            "valueId": 21,
+            "valueName": "thesisOrDissertation"
+        },
+        {
+            "valueId": 22,
+            "valueName": "unknown"
+        },
+        {
+            "valueId": 23,
+            "valueName": "website"
+        },
+        {
+            "valueId": 24,
+            "valueName": "workingPaper"
+        }
+    ]
+}

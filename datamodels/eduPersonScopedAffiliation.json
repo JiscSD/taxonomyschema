@@ -1,0 +1,34 @@
+{
+    "vocabularyId": 7,
+    "vocabularyName": "eduPersonScopedAffiliation",
+    "vocabularyValues": [
+        {
+            "valueId": 1,
+            "valueName": "student"
+        },
+        {
+            "valueId": 2,
+            "valueName": "staff"
+        },
+        {
+            "valueId": 3,
+            "valueName": "employee"
+        },
+        {
+            "valueId": 4,
+            "valueName": "member"
+        },
+        {
+            "valueId": 5,
+            "valueName": "affiliate"
+        },
+        {
+            "valueId": 6,
+            "valueName": "alum"
+        },
+        {
+            "valueId": 7,
+            "valueName": "libraryWalkIn"
+        }
+    ]
+}
