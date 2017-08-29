@@ -1,10 +1,10 @@
 {
     "vocabularyId": 14,
-    "vocabularyName": "publicationResourceType",
+    "vocabularyName": "resourceType",
     "vocabularyValues": [
         {
             "valueId": 1,
-            "valueName": "artOrDesignItem"
+            "valueName": "artDesignItem"
         },
         {
             "valueId": 2,
@@ -24,79 +24,95 @@
         },
         {
             "valueId": 6,
-            "valueName": "conferenceOrWorkshopItem"
+            "valueName": "conferenceWorkshopItem"
         },
         {
             "valueId": 7,
-            "valueName": "examPaper"
+            "valueName": "dataset"
         },
         {
             "valueId": 8,
-            "valueName": "image"
+            "valueName": "examPaper"
         },
         {
             "valueId": 9,
-            "valueName": "journal"
+            "valueName": "image"
         },
         {
             "valueId": 10,
-            "valueName": "learningObject"
+            "valueName": "journal"
         },
         {
             "valueId": 11,
-            "valueName": "movingImage"
+            "valueName": "learningObject"
         },
         {
             "valueId": 12,
-            "valueName": "musicOrMuscalComposition"
+            "valueName": "metadataRecord"
         },
         {
             "valueId": 13,
-            "valueName": "other"
+            "valueName": "movingImage"
         },
         {
             "valueId": 14,
-            "valueName": "patent"
+            "valueName": "musicComposition"
         },
         {
             "valueId": 15,
-            "valueName": "performance"
+            "valueName": "other"
         },
         {
             "valueId": 16,
-            "valueName": "preprint"
+            "valueName": "patent"
         },
         {
             "valueId": 17,
-            "valueName": "report"
+            "valueName": "performance"
         },
         {
             "valueId": 18,
-            "valueName": "review"
+            "valueName": "preprint"
         },
         {
             "valueId": 19,
-            "valueName": "showExhibition"
+            "valueName": "report"
         },
         {
             "valueId": 20,
-            "valueName": "text"
+            "valueName": "review"
         },
         {
             "valueId": 21,
-            "valueName": "thesisOrDissertation"
+            "valueName": "showExhibition"
         },
         {
             "valueId": 22,
-            "valueName": "unknown"
+            "valueName": "software"
         },
         {
             "valueId": 23,
-            "valueName": "website"
+            "valueName": "text"
         },
         {
             "valueId": 24,
-            "valueName": "workingPaper"
+            "valueName": "thesisDissertation"
+        },
+        {
+            "valueId": 25,
+            "valueName": "unknown"
+        },
+        {
+            "valueId": 26,
+            "valueName": "website"
+        },
+        {
+            "valueId": 27,
+            "valueName": "workflow"
+        },
+        {
+            "valueId": 28,
+            "valueName": "equipment"
         }
     ]
 }

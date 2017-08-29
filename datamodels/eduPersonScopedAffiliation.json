@@ -1,5 +1,5 @@
 {
-    "vocabularyId": 7,
+    "vocabularyId": 4,
     "vocabularyName": "eduPersonScopedAffiliation",
     "vocabularyValues": [
         {
@@ -12,22 +12,26 @@
         },
         {
             "valueId": 3,
-            "valueName": "employee"
+            "valueName": "faculty"
         },
         {
             "valueId": 4,
-            "valueName": "member"
+            "valueName": "employee"
         },
         {
             "valueId": 5,
-            "valueName": "affiliate"
+            "valueName": "member"
         },
         {
             "valueId": 6,
-            "valueName": "alum"
+            "valueName": "affiliate"
         },
         {
             "valueId": 7,
+            "valueName": "alum"
+        },
+        {
+            "valueId": 8,
             "valueName": "libraryWalkIn"
         }
     ]

@@ -1,5 +1,5 @@
 {
-    "vocabularyId": 2,
+    "vocabularyId": 1,
     "vocabularyName": "accessType",
     "vocabularyValues": [
         {
@@ -8,7 +8,7 @@
         },
         {
             "valueId": 2,
-            "valueName": "restricted"
+            "valueName": "safeguarded"
         },
         {
             "valueId": 3,
@@ -16,6 +16,10 @@
         },
         {
             "valueId": 4,
+            "valueName": "restricted"
+        },
+        {
+            "valueId": 5,
             "valueName": "closed"
         }
     ]

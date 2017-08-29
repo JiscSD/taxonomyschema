@@ -1,6 +1,6 @@
 {
-    "vocabularyId": 9,
-    "vocabularyName": "objectIdentifierType",
+    "vocabularyId": 6,
+    "vocabularyName": "identifierType",
     "vocabularyValues": [
         {
             "valueId": 1,
