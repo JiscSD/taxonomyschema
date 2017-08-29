@@ -27,9 +27,9 @@ def _create_model(output_path, vid, name, enum_list):
         value_id += 1
 
     model_dict = {
-        "vocabularyId": vid,
-        "vocabularyName": name,
-        "vocabularyValues": vocab_values
+        'vocabularyId': vid,
+        'vocabularyName': name,
+        'vocabularyValues': vocab_values
     }
 
     full_path = os.path.join(output_path, '{}.json'.format(name))
