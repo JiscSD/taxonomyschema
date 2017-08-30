@@ -1,6 +1,6 @@
 {
-    "vocabularyId": 6,
-    "vocabularyName": "eduPersonEntitlement",
+    "vocabularyId": 11,
+    "vocabularyName": "personRole",
     "vocabularyValues": [
         {
             "valueId": 1,
@@ -81,6 +81,10 @@
         {
             "valueId": 20,
             "valueName": "other"
+        },
+        {
+            "valueId": 21,
+            "valueName": "author"
         }
     ]
 }

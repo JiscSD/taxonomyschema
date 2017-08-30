@@ -1,18 +1,18 @@
 {
-    "vocabularyId": 15,
-    "vocabularyName": "storageStatus",
+    "vocabularyId": 7,
+    "vocabularyName": "objectValue",
     "vocabularyValues": [
         {
             "valueId": 1,
-            "valueName": "online"
+            "valueName": "normal"
         },
         {
             "valueId": 2,
-            "valueName": "nearline"
+            "valueName": "high"
         },
         {
             "valueId": 3,
-            "valueName": "offline"
+            "valueName": "veryHigh"
         }
     ]
 }
