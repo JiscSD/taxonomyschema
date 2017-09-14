@@ -43,10 +43,6 @@
             "valueName": "projectLeader"
         },
         {
-            "valueId": 11,
-            "valueName": "publicationAuthor"
-        },
-        {
             "valueId": 12,
             "valueName": "publisher"
         },
@@ -85,6 +81,10 @@
         {
             "valueId": 21,
             "valueName": "author"
+        },
+        {
+          "valueId": 22,
+          "valueName": "depositingUser"
         }
     ]
 }
