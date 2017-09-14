@@ -1,5 +1,5 @@
 {
-    "vocabularyId": 10,
+    "vocabularyId": 8,
     "vocabularyName": "organisationRole",
     "vocabularyValues": [
         {
@@ -40,11 +40,7 @@
         },
         {
             "valueId": 10,
-            "valueName": "billing"
-        },
-        {
-            "valueId": 11,
-            "valueName": "display"
+            "valueName": "author"
         }
     ]
 }

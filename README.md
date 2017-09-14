@@ -30,10 +30,6 @@ optional arguments:
   -h, --help  show this help message and exit
  ```
 
-
-
-
-
 -----------------------------------------------------------
 
 ## Developer Setup
@@ -56,4 +52,27 @@ make lint
 ### Validate the datamodels using JSONSchema
 ```
 ./bin/validate-datamodels.py
+```
+
+### Updating data models
+
+The script `update_data_models.py` can be used to update the data models based on a JSON file containing enumerators.
+
+The `enumeration.json` file can be located in the [rdss-message-api-docs](https://github.com/JiscRDSS/rdss-message-api-docs/blob/master/schemas/enumeration.json).
+
+*Usage*
+
+```
+python update_data_models.py path/to/enumeration.json --output_path <optional output location>
+```
+
+**Arguments**
+
+ - `file_path` (*required*): Path to json file containing enumerators.
+ - `--output_path`: Path to store the output data models (defaults to `output/`).
+
+*Example*
+
+```
+python update_data_models.py enumeration.json --output_path datamodels/
 ```

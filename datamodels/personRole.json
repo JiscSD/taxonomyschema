@@ -1,6 +1,6 @@
 {
-    "vocabularyId": 6,
-    "vocabularyName": "eduPersonEntitlement",
+    "vocabularyId": 11,
+    "vocabularyName": "personRole",
     "vocabularyValues": [
         {
             "valueId": 1,
@@ -43,10 +43,6 @@
             "valueName": "projectLeader"
         },
         {
-            "valueId": 11,
-            "valueName": "publicationAuthor"
-        },
-        {
             "valueId": 12,
             "valueName": "publisher"
         },
@@ -81,6 +77,14 @@
         {
             "valueId": 20,
             "valueName": "other"
+        },
+        {
+            "valueId": 21,
+            "valueName": "author"
+        },
+        {
+          "valueId": 22,
+          "valueName": "depositingUser"
         }
     ]
 }
