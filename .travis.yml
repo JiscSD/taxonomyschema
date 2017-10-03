@@ -10,3 +10,7 @@ script:
   - make lint
   - make test
   - make coverage
+
+after_success:
+  - chmod +x ./announce_to_github.sh
+  - ./announce_to_github.sh
