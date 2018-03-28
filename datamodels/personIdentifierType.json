@@ -7,20 +7,8 @@
             "valueName": "ORCID"
         },
         {
-            "valueId": 2,
-            "valueName": "FOAF"
-        },
-        {
-            "valueId": 3,
-            "valueName": "Twitter"
-        },
-        {
-            "valueId": 4,
-            "valueName": "eduPersonTargetedID"
-        },
-        {
-            "valueId": 5,
-            "valueName": "eduPersonPrincipleName"
+            "valueId": 6,
+            "valueName": "researcherId"
         }
     ]
 }
